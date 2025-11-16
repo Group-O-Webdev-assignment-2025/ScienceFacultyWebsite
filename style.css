@@ -1,12 +1,75 @@
-.hamburger {
-    display: none;
-    cursor: pointer;
+/*     my css file    */
+
+/*Initial styles like global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: yellow;
-    transition: cubic-bezier(0.86, 0, 0.07, 1);
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: white;
+    overflow-x: hidden;
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar {
+    background: black;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow:dimgray;
+    transition: all 0.3s ease;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.nav-logo i {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+/*nav links hovers */
+.nav-link:hover {
+    color: yellow;
+    background: rgba(255, 215, 0, 0.1);
+}
+
