@@ -1,0 +1,12 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: yellow;
+    transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
