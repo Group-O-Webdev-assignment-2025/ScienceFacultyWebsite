@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Faculty of Science - Uganda Martyrs University</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <title>Faculty Of Science</title>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <i class="fas fa-graduation-cap"></i>
                 <span>UMU Science</span>
             </a>
-            <ul class="nav-menu" >
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="programs" class="nav-link">Programs</a></li>
-                <li><a href="stafff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+                <li class="nav-item"><a href="stafff.html" class="nav-link">Staff</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
         </div>
     </nav>
 
- <!------------WELCOME SECTION -->
+    <!-- Hero Section -->
     <section class="hero">
-        <img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg" alt="" class="hero-image">
+        <img src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg" alt="UMU Campus" class="hero-image">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>Faculty of Science</h1>
             <p>Uganda Martyrs University - Nkozi</p>
             <p>Excellence in Science Education and Research</p>
-            <div>
-                <a href="" class="btn btn-primary">Explore Our Programs</a>
-                <a href="" class="btn btn-secondary">Visit Our Campus  Nkozi</a>
+            <div style="margin-top: 2rem;">
+                <a href="programs.html" class="btn btn-primary">Explore Programs</a>
+                <a href="contact.html" class="btn btn-secondary">Visit Campus</a>
             </div>
         </div>
     </section>
 
-    <!---------features/showcase talking about the good things of umu-->
+    <!-- Features Section -->
     <section class="features">
         <div class="container">
             <h2>Why Choose Our Faculty?</h2>
-            <div class="features-grid"> 
+            <div class="features-grid">
                 <div class="feature-card">
                     <i class="fas fa-flask"></i>
                     <h3>Modern Laboratories</h3>
@@ -69,49 +68,50 @@
         </div>
     </section>
 
-    <!---------Programs preview just to inspire our guests-->
+    <!-- Programs Preview -->
     <section class="programs">
         <div class="container">
             <h2>Our Programs</h2>
             <div class="programs-grid">
                 <div class="program-card">
-                    <img src="https://media.istockphoto.com/id/1628553826/photo/ai-or-artificial-intelligence-concept-businessman-using-computer-use-ai-to-help-business-and.jpg?s=2048x2048&w=is&k=20&c=OYCON0ru9uVSr-FP-iaJ6S0fWni7DDPlMX4LExBtLHU=" alt="" class="program-image">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Computer Science" class="program-image">
                     <div class="program-content">
                         <h3>Computer Science</h3>
-                        <p>Duration: 3 Years</p>
-                        <p>Comprehensive program covering software development, algorithms, and computer systems</p>
-                        <button class="btn btn-primary">Learn More</button>
+                        <p class="duration">Duration: 3 Years</p>
+                        <p>Comprehensive program covering software development, algorithms, and computer systems.</p>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Computer Science')">Learn More</button>
                     </div>
                 </div>
                 <div class="program-card">
-                    <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=2048x2048&w=is&k=20&c=CnYhOjeTPisYsN-OLYVp60ZNKK3jP3JCPZrCjxCqmto=" alt="" class="program-image">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Information Technology" class="program-image">
                     <div class="program-content">
                         <h3>Information Technology</h3>
                         <p class="duration">Duration: 3 Years</p>
                         <p>Focus on networking, system administration, and IT infrastructure management.</p>
-                        <button class="btn btn-primary">Learn More</button>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Information Technology')">Learn More</button>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="" class="btn btn-danger" >View All Programs</a>
+                <a href="programs.html" class="btn btn-danger">View All Programs</a>
             </div>
         </div>
     </section>
-    <!---------------FOOTER-->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i>P.O. Box 5498, Kampala, Uganda</p>
-                    <p><i class="fas fa-phone"></i> +256 776 629 018</p>
-                    <p><i class="fas fa-envelope"></i> adminscience@umu.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. Box 5498, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 414 123 456</p>
+                    <p><i class="fas fa-envelope"></i> science.faculty@umu.ac.ug</p>
                     <div class="social-links">
-                        <a href="" class="fab fa-facebook-f"></a>
-                        <a href="" class="fab fa-twitter"><i></i></a>
-                        <a href="" class="fab fa-linkedin-in"><i></i></a>
-                        <a href="" class="fab fa-instagram"><i></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -120,23 +120,35 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="programs.html">Academic Programs</a></li>
                         <li><a href="staff.html">Faculty Staff</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Resources</h3>
                     <ul>
-                        <li><a href="">Student Portal</a></li>
-                        <li><a href="">Research Database</a></li>
-                        <li><a href="">Library Resources</a></li>
-                        <li><a href="">Career Services</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Research Database</a></li>
+                        <li><a href="#">Library Resources</a></li>
+                        <li><a href="#">Career Services</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p> &copy; <span>Faculty of Science -Uganda Martyrs University. All rights reserved.</span> </p>
+                <p>&copy; <span id="currentYear">2025</span> Faculty of Science - Uganda Martyrs University. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" alt="Modal Image">
+            <h3 id="modalTitle" style="color: white; text-align: center; margin-top: 1rem;"></h3>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
