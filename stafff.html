@@ -3,69 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Staff - Faculty of Science</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="staff.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <i class="fas fa-graduation-cap"></i>
                 <span>UMU Science</span>
             </a>
-            <ul class="nav-menu" >
-                <li><a href="#" class="nav-link active">Home</a></li>
-                <li><a href="#" class="nav-link">Programs</a></li>
-                <li><a href="#" class="nav-link">Staff</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+                <li class="nav-item"><a href="staff.html" class="nav-link active">Staff</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            
         </div>
     </nav>
-    <section class="hero">
-        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="" class="helo-image">
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; margin-top: 70px;">
+        <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Faculty Staff" class="hero-image">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Our Esteemed Staff</h1>
-            <p>Meet the dedicated professionals driving excellence in education and research at the Faculty of Science.</p>
+            <h1>Our Faculty Staff</h1>
+            <p>Meet Our Dedicated Academic Team</p>
         </div>
     </section>
-    <section class="staff-profiles">
-        <div class="profiles">
-                <div class="contain">
-                <div class="profile-card card1">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. John Doe">
-                    <h3>Dr. John Doe</h3>
-                    <p>Professor of Biology</p>
-                    <p>Email: johndoe@example.com</p>
+
+    <!-- Staff Section -->
+    <section class="staff-section">
+        <div class="container">
+            <h2>Academic Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg" alt="Dr. John Musisi" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Dr. John Musisi</h3>
+                        <p class="position">Dean of Faculty</p>
+                        <p>PhD in Computer Science - Makerere University</p>
+                        <p><strong>Specialization:</strong> Artificial Intelligence, Machine Learning</p>
+                        <p><strong>Research Interests:</strong> Deep Learning, Natural Language Processing</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> j.musisi@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 101</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Dr. John Musisi', 'j.musisi@umu.ac.ug')">Contact</button>
+                    </div>
                 </div>
-            </div>
-            <div class="contain1">
-                <div class="profile-card2">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Jane Smith">
-                    <h3>Dr. Jane Smith</h3> 
-                    <p>Associate Professor of Chemistry</p>
-                    <p>Email: janesmith@example.com</p>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg" alt="Prof. Sarah Nakato" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Prof. Sarah Nakato</h3>
+                        <p class="position">Head of Computer Science Department</p>
+                        <p>MSc in Software Engineering - Uganda Martyrs University</p>
+                        <p><strong>Specialization:</strong> Software Engineering, Web Development</p>
+                        <p><strong>Research Interests:</strong> Agile Methodologies, UX Design</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> s.nakato@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 205</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Prof. Sarah Nakato', 's.nakato@umu.ac.ug')">Contact</button>
+                    </div>
                 </div>
-            </div>
-            <div class="contain1">
-                <div class="profile-card2">
-                    <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Dr. Mike Johnson">
-                    <h3>Dr. Mike Johnson</h3>
-                    <p>Assistant Professor of Physics</p>
-                    <p>Email: mikejohnson@example.com</p>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg" alt="Mr. David Kato" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Mr. David Kato</h3>
+                        <p class="position">Senior Lecturer</p>
+                        <p>MSc in Information Technology - Kyambogo University</p>
+                        <p><strong>Specialization:</strong> Database Systems, Network Security</p>
+                        <p><strong>Research Interests:</strong> Database Optimization, Cybersecurity</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> d.kato@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 308</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Mr. David Kato', 'd.kato@umu.ac.ug')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3760852/pexels-photo-3760852.jpeg" alt="Ms. Grace Namukasa" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Ms. Grace Namukasa</h3>
+                        <p class="position">Lecturer</p>
+                        <p>MSc in Computer Science - Uganda Martyrs University</p>
+                        <p><strong>Specialization:</strong> Mobile Development, User Interface Design</p>
+                        <p><strong>Research Interests:</strong> Mobile UX, Cross-platform Development</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> g.namukasa@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 312</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Ms. Grace Namukasa', 'g.namukasa@umu.ac.ug')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/8837549/pexels-photo-8837549.jpeg" alt="Dr. Robert Ssemakula" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Dr. Robert Ssemakula</h3>
+                        <p class="position">Associate Professor</p>
+                        <p>PhD in Data Science - University of London</p>
+                        <p><strong>Specialization:</strong> Machine Learning, Big Data Analytics</p>
+                        <p><strong>Research Interests:</strong> Predictive Modeling, Data Mining</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> r.ssemakula@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 215</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Dr. Robert Ssemakula', 'r.ssemakula@umu.ac.ug')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/31762174/pexels-photo-31762174.jpeg" alt="Ms. Patricia Nalubega" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Ms. Patricia Nalubega</h3>
+                        <p class="position">Assistant Lecturer</p>
+                        <p>MSc in Cybersecurity - Makerere University</p>
+                        <p><strong>Specialization:</strong> Network Security, Digital Forensics</p>
+                        <p><strong>Research Interests:</strong> Threat Intelligence, Security Protocols</p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> p.nalubega@umu.ac.ug</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 320</p>
+                        </div>
+                        <button class="contact-btn" onclick="contactStaff('Ms. Patricia Nalubega', 'p.nalubega@umu.ac.ug')">Contact</button>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </section>
+
+    <!-- Administrative Staff -->
+    <section class="staff-section" style="background: var(--white);">
+        <div class="container">
+            <h2>Administrative Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg" alt="Mrs. Alice Nalwoga" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Mrs. Alice Nalwoga</h3>
+                        <p class="position">Faculty Administrator</p>
+                        <p>Office: Science Block, Room 100</p>
+                        <p>Phone: +256 414 123 456</p>
+                        <p>Email: faculty.science@umu.ac.ug</p>
+                        <button class="contact-btn" onclick="contactStaff('Mrs. Alice Nalwoga', 'faculty.science@umu.ac.ug')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="https://images.pexels.com/photos/3785076/pexels-photo-3785076.jpeg" alt="Mr. Joseph Mugisha" class="staff-photo">
+                    <div class="staff-info">
+                        <h3>Mr. Joseph Mugisha</h3>
+                        <p class="position">IT Support Specialist</p>
+                        <p>Office: Computer Lab 1</p>
+                        <p>Phone: +256 414 123 457</p>
+                        <p>Email: it.support@umu.ac.ug</p>
+                        <button class="contact-btn" onclick="contactStaff('Mr. Joseph Mugisha', 'it.support@umu.ac.ug')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. Box 5498, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 414 123 456</p>
+                    <p><i class="fas fa-envelope"></i> science.faculty@umu.ac.ug</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Academic Programs</a></li>
+                        <li><a href="staff.html">Faculty Staff</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Faculty of Science - Uganda Martyrs University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
