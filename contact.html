@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Faculty of Science</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>UMU Science</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+                <li class="nav-item"><a href="staff.html" class="nav-link">Staff</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; margin-top: 70px;">
+        <img src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg" alt="Contact" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in Touch with Our Faculty</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear from you. Reach out to us with any questions or inquiries.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Faculty of Science<br>Uganda Martyrs University<br>P.O. Box 5498, Kampala, Uganda</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>Main Office: +256 300 123 456<br>Admissions: +256 414 123 457<br>Emergency: +256 414 123 458</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Addresses</h3>
+                            <p>General: science.faculty@umu.ac.ug<br>Admissions: admissions.science@umu.ac.ug<br>Support: support.science@umu.ac.ug</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" onsubmit="return validateForm('contactForm')">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="program">Program Information</option>
+                                <option value="faculty">Faculty Contact</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Program of Interest</label>
+                            <select id="program" name="program">
+                                <option value="">Select a program</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="information-technology">Information Technology</option>
+                                <option value="software-engineering">Software Engineering</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div style="background: var(--gray-light); padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>Uganda Martyrs University - Nkozi Campus</h3>
+                <p>Located in Mpigi District, Central Uganda</p>
+                <div style="background: #e0e0e0; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
+                    <p><i class="fas fa-map" style="font-size: 3rem; color: var(--umu-red);"></i></p>
+                    <p style="margin-left: 1rem;">Interactive map would be embedded here</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <h4>Directions</h4>
+                    <p>From Kampala: Take Masaka Road for approximately 80km. The university is located on the left side of the road.</p>
+                    <p>Public transport available from Kampala to Nkozi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background: var(--gray-light);">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Admission Requirements</h3>
+                    <p>What are the entry requirements for undergraduate programs? UACE with 2 principal passes or equivalent qualifications.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Tuition Fees</h3>
+                    <p>What is the tuition fee structure? Fees vary by program. Contact admissions for detailed fee structure.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Application Deadlines</h3>
+                    <p>When should I apply? Applications are accepted for January, May, and September intakes.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Accommodation</h3>
+                    <p>Is accommodation available? Yes, both on-campus and off-campus accommodation options are available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. Box 5498, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 414 123 456</p>
+                    <p><i class="fas fa-envelope"></i> science.faculty@umu.ac.ug</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Academic Programs</a></li>
+                        <li><a href="staff.html">Faculty Staff</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Emergency Contacts</h3>
+                    <p>Security: +256 414 123 459</p>
+                    <p>Medical: +256 414 123 460</p>
+                    <p>IT Support: +256 414 123 461</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Faculty of Science - Uganda Martyrs University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
