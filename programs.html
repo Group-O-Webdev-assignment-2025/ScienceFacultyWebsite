@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - Faculty of Science</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>UMU Science</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="programs.html" class="nav-link active">BARASA SIMON PETER 2025-B071-14161</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li class="nav-item"><a href="staff.html" class="nav-link">Staff</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; margin-top: 70px;">
+        <img src="https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg" alt="Programs" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Academic Programs</h1>
+            <p>Shape Your Future with Quality Science Education</p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="container">
+            <h2>Undergraduate Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Computer Science" class="program-image">
+                    <div class="program-content">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="duration">Duration: 3 Years | Credits: 120</p>
+                        <p>Comprehensive program covering software development, algorithms, data structures, and computer systems. Prepare for careers in software engineering, web development, and systems analysis.</p>
+                        <div class="program-features">
+                            <p><strong>Core Courses:</strong> Programming, Algorithms, Database Systems, Web Development</p>
+                            <p><strong>Career Paths:</strong> Software Developer, Systems Analyst, Web Developer</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Computer Science')">Program Details</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Information Technology" class="program-image">
+                    <div class="program-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="duration">Duration: 3 Years | Credits: 120</p>
+                        <p>Focus on networking, system administration, cybersecurity, and IT infrastructure management. Ideal for careers in network administration, IT support, and system security.</p>
+                        <div class="program-features">
+                            <p><strong>Core Courses:</strong> Networking, System Administration, Cybersecurity, Database Management</p>
+                            <p><strong>Career Paths:</strong> Network Administrator, IT Manager, Security Analyst</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Information Technology')">Program Details</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="Software Engineering" class="program-image">
+                    <div class="program-content">
+                        <h3>Bachelor of Science in Software Engineering</h3>
+                        <p class="duration">Duration: 3 Years | Credits: 120</p>
+                        <p>Specialize in software design, development methodologies, quality assurance, and project management. Perfect for aspiring software architects and project managers.</p>
+                        <div class="program-features">
+                            <p><strong>Core Courses:</strong> Software Design, Agile Development, Testing, Project Management</p>
+                            <p><strong>Career Paths:</strong> Software Engineer, Project Manager, QA Engineer</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Software Engineering')">Program Details</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" alt="Data Science" class="program-image">
+                    <div class="program-content">
+                        <h3>Bachelor of Science in Data Science</h3>
+                        <p class="duration">Duration: 3 Years | Credits: 120</p>
+                        <p>Master data analysis, machine learning, statistical modeling, and big data technologies. Prepare for roles in data analysis, business intelligence, and AI development.</p>
+                        <div class="program-features">
+                            <p><strong>Core Courses:</strong> Statistics, Machine Learning, Data Visualization, Big Data</p>
+                            <p><strong>Career Paths:</strong> Data Analyst, Machine Learning Engineer, BI Specialist</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Data Science')">Program Details</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" alt="Cybersecurity" class="program-image">
+                    <div class="program-content">
+                        <h3>Bachelor of Science in Cybersecurity</h3>
+                        <p class="duration">Duration: 3 Years | Credits: 120</p>
+                        <p>Learn to protect systems and networks from cyber threats, digital forensics, and security protocols. Essential for careers in information security and digital protection.</p>
+                        <div class="program-features">
+                            <p><strong>Core Courses:</strong> Network Security, Cryptography, Digital Forensics, Ethical Hacking</p>
+                            <p><strong>Career Paths:</strong> Security Analyst, Penetration Tester, Security Architect</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showProgramDetails('Cybersecurity')">Program Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Requirements -->
+    <section class="features" style="background: var(--gray-light);">
+        <div class="container">
+            <h2>Admission Requirements</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Academic Qualifications</h3>
+                    <p>Uganda Advanced Certificate of Education (UACE) with at least 2 principal passes in relevant subjects, or equivalent qualifications.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-passport"></i>
+                    <h3>Application Process</h3>
+                    <p>Submit completed application form, academic transcripts, and supporting documents through our online portal or admissions office.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Application Deadlines</h3>
+                    <p>Applications are accepted throughout the year for January, May, and September intakes. Early application is encouraged.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. Box 5498, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 414 123 456</p>
+                    <p><i class="fas fa-envelope"></i> science.faculty@umu.ac.ug</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html ">Home</a></li>
+                        <li><a href="programs.html">Academic Programs</a></li>
+                        <li><a href="staff.html">Faculty Staff</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Faculty of Science - Uganda Martyrs University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
