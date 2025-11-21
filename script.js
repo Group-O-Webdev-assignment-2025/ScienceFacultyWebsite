@@ -37,3 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     yearElement.textContent = currentYear;
   }
 });
+
+// 3. Simple program details alert
+function showProgramDetails(programName) {
+    if (programName === 'Computer Science') {
+        alert('Computer Science Program:\n\n• Duration: 3 Years\n• Learn programming, web development, and software engineering\n• Career opportunities: Software Developer, Web Developer, Systems Analyst');
+    } else if (programName === 'Information Technology') {
+        alert('Information Technology Program:\n\n• Duration: 3 Years\n• Learn networking, system administration, and IT support\n• Career opportunities: Network Administrator, IT Support Specialist, System Administrator');
+    } else {
+        alert('Program information for ' + programName);
+    }
+}
